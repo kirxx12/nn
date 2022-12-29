@@ -18,4 +18,3 @@ def repair(path):
         threshold = 100
         img_threshold = gray.point(lambda x: 255 if x > threshold else 0)
         img_threshold.save(path[:len(path)-10] + '_rep.png')
-        cv2.imshow('=', img_threshold)
